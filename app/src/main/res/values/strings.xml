@@ -6,5 +6,8 @@
     <string name="begin">Начнем?</string>
     <string name="meet">Для начала давайте познакомимся:</string>
     <string name="next">Далее</string>
-    <string name="bla">Б) Полежать ещё\n10 минут</string>
+    <string name="menu">Меню</string>
+    <string name="bedroom_question">Пора на работу, каждое утро одно и то же 7:00…</string>
+    <string name="bedroom_answerA">А) Вставать</string>
+    <string name="bedroom_answerB">Б) Полежать ещё\n10 минут</string>
 </resources>

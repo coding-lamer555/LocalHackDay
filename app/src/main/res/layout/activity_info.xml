@@ -9,42 +9,23 @@
 
     <ImageView
         android:id="@+id/butterfly"
-        android:layout_width="90dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="16dp"
-        android:adjustViewBounds="true"
-        android:rotation="-45"
-        android:scaleType="fitCenter"
+        style="@style/ButterflyImage"
         android:src="@drawable/butterfly"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.example.localhackday.utils.AnimatedTextView
         android:id="@+id/info"
-        style="@style/InfoTextView"
-        android:layout_width="match_parent"
-        android:layout_marginTop="32dp"
-        android:ellipsize="end"
-        android:maxLines="16"
-        android:scrollbars="vertical"
-        android:singleLine="false"
+        style="@style/InfoText"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/butterfly" />
 
     <Button
         android:id="@+id/begin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/custom_back"
-        android:fontFamily="@font/press_start2p_regular"
+        style="@style/BottomButton"
         android:onClick="onBeginClick"
-        android:padding="8dp"
         android:text="@string/begin"
-        android:textColor="@color/colorBack"
-        android:textSize="21sp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"

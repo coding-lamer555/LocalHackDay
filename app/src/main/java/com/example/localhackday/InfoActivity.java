@@ -57,6 +57,7 @@ public class InfoActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                info.setTextSize(18);
                 info.setText(R.string.info2);
                 info.setIsVisible(false);
                 info.setDuration(TIME_OUT_LONG);
