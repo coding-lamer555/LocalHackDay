@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bedroom"
+    tools:context=".BedroomActivity"
+    android:id="@+id/root">
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/custom_back"
+        android:fontFamily="@font/press_start2p_regular"
+        android:onClick="onMenuClick"
+        android:padding="8dp"
+        android:text="Меню"
+        android:textColor="@color/colorBack"
+        android:textSize="21sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.localhackday.utils.AnimatedTextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/custom_back"
+        android:fontFamily="@font/press_start2p_regular"
+        android:text="Пора на работу, каждое утро одно и то же 7:00…"
+        android:textColor="@color/colorBack"
+        android:textSize="21sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu" />
+
+    <Button
+        android:id="@+id/answerA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_back"
+        android:fontFamily="@font/press_start2p_regular"
+        android:onClick="onAnswerAClick"
+        android:padding="8dp"
+        android:text="А) Вставать"
+        android:textColor="@color/colorBack"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/answerB"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/answerB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/custom_back"
+        android:fontFamily="@font/press_start2p_regular"
+        android:onClick="onAnswerBClick"
+        android:padding="8dp"
+        android:text="@string/bla"
+        android:textColor="@color/colorBack"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
