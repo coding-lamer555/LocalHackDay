@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stop"
+    tools:context=".StopActivity">
+
+    <Button
+        android:id="@+id/menu"
+        style="@style/MenuButton"
+        android:onClick="onMenuClick"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="800dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/grandpa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <com.example.localhackday.utils.AnimatedTextView
+        android:id="@+id/question"
+        style="@style/QuestionText"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/kitchen_question"
+        app:layout_constraintBottom_toTopOf="@id/answerA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/answerA"
+        style="@style/BottomButton"
+        android:onClick="onAnswerAClick"
+        android:text="@string/stop_answerA"
+        app:layout_constraintBottom_toTopOf="@id/answerB"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/answerB"
+        style="@style/BottomButton"
+        android:onClick="onAnswerBClick"
+        android:text="@string/stop_answerB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
