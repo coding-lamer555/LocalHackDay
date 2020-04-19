@@ -7,4 +7,18 @@
     android:background="@color/violet"
     tools:context=".FinalActivity">
 
+    <ImageView
+        android:id="@+id/butterfly"
+        style="@style/ButterflyImage"
+        android:src="@drawable/butterfly"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.localhackday.utils.AnimatedTextView
+        android:id="@+id/info"
+        style="@style/InfoText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/butterfly" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

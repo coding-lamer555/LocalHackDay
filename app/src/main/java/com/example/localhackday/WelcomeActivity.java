@@ -1,6 +1,8 @@
 package com.example.localhackday;
 
 import android.content.Intent;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -17,6 +19,12 @@ public class WelcomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
+
+//        MediaPlayer mediaPlayer = new MediaPlayer();
+//        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
+//        MediaPlayer click = MediaPlayer.create(this, R.raw.muz);
+//        click.start();
+
 
         title = findViewById(R.id.title);
         title.setDuration(TIME_OUT);

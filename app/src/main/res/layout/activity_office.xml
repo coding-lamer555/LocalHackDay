@@ -28,7 +28,7 @@
     <com.example.localhackday.utils.AnimatedTextView
         android:id="@+id/question"
         style="@style/QuestionText"
-        android:layout_marginLeft="250dp"
+        android:layout_marginLeft="150dp"
         android:layout_marginBottom="32dp"
         android:text="@string/office_question"
         app:layout_constraintBottom_toTopOf="@id/answerA"

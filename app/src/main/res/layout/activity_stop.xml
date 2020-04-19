@@ -29,7 +29,7 @@
         style="@style/QuestionText"
         android:layout_marginTop="200dp"
         android:layout_marginBottom="32dp"
-        android:text="@string/kitchen_question"
+        android:text="@string/stop_question"
         app:layout_constraintBottom_toTopOf="@id/answerA"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
