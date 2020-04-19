@@ -4,6 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/entrance"
     tools:context=".EntranceActivity">
+
+    <Button
+        android:id="@+id/menu"
+        style="@style/MenuButton"
+        android:onClick="onMenuClick"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.localhackday.utils.AnimatedTextView
+        android:id="@+id/question"
+        style="@style/QuestionText"
+        android:text="@string/entrance_question"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu" />
+
+    <Button
+        android:id="@id/answerA"
+        style="@style/BottomButton"
+        android:onClick="onAnswerAClick"
+        android:text="@string/entrance_answerA"
+        app:layout_constraintBottom_toTopOf="@id/answerB"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/answerB"
+        style="@style/BottomButton"
+        android:onClick="onAnswerBClick"
+        android:text="@string/entrance_answerB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

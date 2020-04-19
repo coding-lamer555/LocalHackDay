@@ -4,6 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/stairs"
     tools:context=".StairsActivity">
+
+    <Button
+        android:id="@+id/menu"
+        style="@style/MenuButton"
+        android:onClick="onMenuClick"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.localhackday.utils.AnimatedTextView
+        android:id="@+id/question"
+        style="@style/QuestionText"
+        android:text="@string/stairs"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu" />
+
+    <Button
+        android:id="@+id/next"
+        style="@style/BottomButton"
+        android:onClick="onNextClick"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
